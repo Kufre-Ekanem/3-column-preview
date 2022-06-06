@@ -1,0 +1,152 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap'); */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --width: 60%;
+    --max-width: 1440px;
+    --font-size: 1rem;
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dak-cyan:hsl(179, 100%, 13%);
+    --transparent-white:hsla(0, 0%, 100%, 0.75);
+    --very-light-gray:hsl(0, 0%, 95%)
+
+}
+
+body{
+    font-size: 0.86rem;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.main-class{
+    width: var(--width);
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 6rem;
+}
+
+#container1{
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#container2{
+    background-color: var(--dark-cyan);
+}
+#container3{
+    background-color: var(--very-dak-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-1,
+.main-2,
+.main-3{
+    margin: 1.8em;
+}
+
+p{
+    color: var(--transparent-white);
+}
+
+h1{
+    color: var(--very-light-gray);
+}
+
+p,h1{
+    margin: 1.3rem 0;
+}
+
+button{
+    margin: 1.8rem 0;
+    padding: 0.5rem 1.6rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-1{
+    color: var(--bright-orange);
+}
+.btn-2{
+    color: var(--dark-cyan);
+}
+.btn-3{
+    color: var(--very-dak-cyan);
+}
+
+.btn-1:active{
+    cursor: pointer;
+    background-color: var(--bright-orange);
+    border: solid 1px white;
+    color: var(--transparent-white);
+}
+.btn-2:active{
+    cursor: pointer;
+    background-color: var(--dark-cyan);
+    border: solid 1px white;
+    color: var(--transparent-white);
+}
+.btn-3:active{
+    cursor: pointer;
+    background-color: var(--very-dak-cyan);
+    border: solid 1px white;
+    color: var(--transparent-white);
+}
+
+footer{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+@media (max-width: 746px) {
+    .main-class{
+        display: block;
+        flex-direction: column;
+    }
+
+    .main-1,
+    .main-2,
+    .main-3{
+        padding: 1.2rem;
+        margin: 0;
+    }
+
+    .main-3{
+        margin-bottom: 2.8rem;
+    }
+
+    #container1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #container3 {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    
+}
+
+
